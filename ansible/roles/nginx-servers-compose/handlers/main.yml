@@ -1,0 +1,23 @@
+---
+# handlers file for nginx-servers-compose
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+- name: stop docker
+  community.docker.docker_compose:
+    project_src: "{{ destin_folder }}"
+    stopped: true
+=======
+>>>>>>> 57b0fa3 (first test deploy)
+=======
+- name: stop docker
+  community.docker.docker_compose:
+    project_src: "{{ destin_folder }}"
+    stopped: true
+>>>>>>> 00b5390 (add stop funcion when files changed)
+=======
+- name: stop docker
+  community.docker.docker_compose:
+    project_src: "{{ destin_folder }}"
+    stopped: true
+>>>>>>> f83322a (add stop handler)
