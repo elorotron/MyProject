@@ -1,0 +1,11 @@
+
+[staging_servers]
+LinuxVM3 ansible_host=192.168.100.33 ansible_user=vm3 ansible_ssh_private_key_file=/home/vm1/.ssh/id_rsa owner=DenisVM3
+
+[prod_servers]
+LinuxVM4 ansible_host=192.168.100.44 ansible_user=vm4 ansible_ssh_private_key_file=/home/vm1/.ssh/id_rsa owner=DenisVM4
+LinuxVM5 ansible_host=192.168.100.55 ansible_user=vm5 ansible_ssh_private_key_file=/home/vm1/.ssh/id_rsa owner=DenisVM5
+
+[staging_ALL:children]
+staging_servers
+prod_servers
