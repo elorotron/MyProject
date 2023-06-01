@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+  </head>
+  <body>
+    Owner of this server: {{ owner }}<br>
+    Server host name: {{ ansible_hostname }}<br>
+    Server OS Family: {{ ansible_os_family }}<br>
+    IP Address of this server: {{ ansible_default_ipv4.address }}<br>
+  </body>
+</html>

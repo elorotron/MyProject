@@ -1,0 +1,5 @@
+---
+# handlers file for deploy-nginx-server-compose
+- name: Restart nginx
+  when: ansible_os_family == "Debian"
+  service: name=nginx state=restarted
