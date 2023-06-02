@@ -1,2 +1,6 @@
 ---
 # handlers file for nginx-servers-compose
+- name: stop docker
+  community.docker.docker_compose:
+    project_src: "{{ destin_folder }}"
+    stopped: true
