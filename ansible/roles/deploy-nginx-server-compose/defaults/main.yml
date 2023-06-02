@@ -1,3 +1,0 @@
----
-# defaults file for deploy-nginx-server-compose
-destin_folder: /var/www/html
